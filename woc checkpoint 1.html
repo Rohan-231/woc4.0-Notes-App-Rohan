@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="woc.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,300&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&family=Montserrat:ital,wght@1,300&family=Rubik:wght@500&display=swap" rel="stylesheet">
+    <style>
+        .container{
+            display: flex;
+            z-index: 48;
+            color: orangered;
+            background-color: rgb(204, 228, 228);
+            align-items: center;
+            justify-content: center;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .list{
+            display: block;
+            background-color: rgb(189, 124, 64);
+            margin: auto;
+            padding: auto;
+            justify-content: center;
+                height: 500px;
+                width: 500px;
+                font-family: 'Kanit', sans-serif;
+                
+        }
+        .title{
+            background-color: rgb(194, 60, 60);
+            margin: 23px auto;
+            text-align: center;
+        }
+        #t3:hover{
+            color: skyblue;
+            background-color: tomato;
+        }
+        #t3{
+            background-color: rgb(10, 134, 124);
+            border-style: solid;
+            border-color: red;
+            border-radius: 80%;
+            display: block;
+            position: fixed;
+            right: 4px;
+            bottom: 2px;
+            font-size: large;
+            font-family: 'Rubik', sans-serif;
+        }
+        #t2{
+            float: right; 
+            background-color: rgb(10, 134, 124);
+        }
+        #t1{
+            float: right; 
+            background-color: royalblue;
+        }
+        #t4{
+            float: right; 
+            background-color: royalblue;
+        }
+        #t5{
+            float: right; 
+            background-color: rgb(10, 134, 124);
+        }
+        
+    </style>
+</head>
+<body>
+<div class="container" id="task"><h1>Notes App</h1></div>
+    <div class="list">
+        <h2 class="title">Tasks</h2>
+        <ul>
+        <li>Task 1
+            <button id="t1">Edit</button>
+            <button id="t2">Delete</button>
+        </li>
+        <li>Task 2
+            <button id="t4">Edit</button>
+            <button id = "t5">Delete</button>
+        </li>
+    </ul>
+    <button type="button" class="btn" id="t3"><strong>+</strong></button>
+    <button type="button" class="btn" ><strong>Add Task </strong></button>
+    <button type="button" class="btn" ><strong>Delete List </strong></button>
+    
+</div>
+</body>
+</html>
